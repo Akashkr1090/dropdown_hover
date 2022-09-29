@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .dropbtn_login {
+            background-color: #2e54df;
+            color: white;
+            margin-left: 150px;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown_login_container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown_content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            margin-left: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown_content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown_content a:hover {
+            background-color: #fff;
+        }
+
+        .dropdown_login_container:hover .dropdown_content {
+            display: block;
+        }
+
+        .dropdown_login_container:hover .dropbtn_login {
+            background-color: #2707db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>** Hoverable Dropdown **</h2>
+
+    <div class="dropdown_login_container">
+        <button class="dropbtn_login">Dropdown</button>
+        <div class="dropdown_content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
